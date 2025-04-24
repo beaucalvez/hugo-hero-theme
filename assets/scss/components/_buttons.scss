@@ -2,7 +2,8 @@
   white-space: nowrap;
   display: inline-block;
   padding: 7px 15px;
-  background: $primary;
+  background: $secondary;
+  border-radius: 8px;
   font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
@@ -15,6 +16,7 @@
     color: #fff;
     background-color: lighten($primary, 10%);
     text-decoration: none;
+    cursor: pointer;
   }
 }
 .button-white {

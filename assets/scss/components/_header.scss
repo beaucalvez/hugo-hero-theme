@@ -1,18 +1,43 @@
 .header {
   color: $primary;
-  background-color: #ffffff;
+  background-color: rgba($white, .9);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 1px 15px rgba(50, 50, 93, 0.2);
-  height: 60px;
+  box-shadow: 0 1px 15px rgba(50, 50, 93, 0.6);
+  border-bottom: 2px solid $highlight;
+  height: 80px;
+  @include media-breakpoint-up(sm) {
+	height: 130px;
+  }
   .container {
+  	.logocontainer {
+  		display: flex;
+  		justify-content: flex-start;
+  		align-items: center;
+  	}
+    h1 {
+		display: inline-block;
+		font-weight: $font-weight-black;
+		letter-spacing: -4px;
+		font-size: 1.8rem;
+		color: $highlight;
+		text-shadow: 0 2px 1px rgba($black, .5),  0 -1px 1px rgba($white, .9);
+		margin-left: .2rem;
+		margin-top: .4rem;
+		@include media-breakpoint-up(sm) {
+		  letter-spacing: -7px;
+		  font-size: 3rem;
+		}
+  	}
+
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   &.header-absolute {
-    position: absolute;
+    position: sticky;
+    top: 0;
     z-index: 100;
     width: 100%;
   }

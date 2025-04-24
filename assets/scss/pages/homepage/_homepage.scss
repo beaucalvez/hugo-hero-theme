@@ -1,0 +1,11 @@
+#faq{
+	background-color: $primary;
+	dd {
+		margin-bottom: 1rem;
+	}
+}
+
+#pricing, #schedule, #accommodations, #location, #details, #hero {
+	border-bottom: 7px solid $highlight;
+
+}
